@@ -1,6 +1,6 @@
 {
     "name": "assumilhig/laravel-key-generator",
-    "description": "A simple package to generate Eloquent model keys",
+    "description": "A laravel package that generate a eloquent model keys",
     "keywords": [
         "assumilhig",
         "laravel-key-generator"
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.4|^8.0",
         "illuminate/support": "^8.0"
     },
     "require-dev": {
