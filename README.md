@@ -1,4 +1,4 @@
-# Very short description of the package
+# A simple package to generate Eloquent Model Keys
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/assumilhig/laravel-key-generator.svg?style=flat-square)](https://packagist.org/packages/assumilhig/laravel-key-generator)
 [![Total Downloads](https://img.shields.io/packagist/dt/assumilhig/laravel-key-generator.svg?style=flat-square)](https://packagist.org/packages/assumilhig/laravel-key-generator)
