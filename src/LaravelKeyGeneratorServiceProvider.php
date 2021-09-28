@@ -14,11 +14,11 @@ class LaravelKeyGeneratorServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('laravel-key-generator.php'),
+                __DIR__.'/../config/config.php' => config_path('laravel-key-generator.php'),
             ], 'config');
         }
 
-        Str::macro('key', fn(string $prefix, int|null $length = null) => LaravelKeyGenerator::generate($prefix, $length));
+        Str::macro('key', fn (string $prefix, int|null $length = null) => LaravelKeyGenerator::generate($prefix, $length));
     }
 
     /**
@@ -27,7 +27,7 @@ class LaravelKeyGeneratorServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel-key-generator');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-key-generator');
 
         // Register the main class to use with the facade
         $this->app->singleton('laravel-key-generator', function () {

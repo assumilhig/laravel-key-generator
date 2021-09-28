@@ -15,7 +15,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            LaravelKeyGeneratorServiceProvider::class
+            LaravelKeyGeneratorServiceProvider::class,
         ];
     }
 }

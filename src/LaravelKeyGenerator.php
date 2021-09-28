@@ -6,9 +6,8 @@ use Illuminate\Support\Str;
 
 class LaravelKeyGenerator
 {
-
     /**
-     * Generate a new key
+     * Generate a new key.
      *
      * @param string $prefix
      * @param int|null $length

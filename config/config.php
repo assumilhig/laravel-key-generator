@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'length' => 20
+    'length' => 20,
 ];
