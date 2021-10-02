@@ -18,7 +18,9 @@ class LaravelKeyGeneratorServiceProvider extends ServiceProvider
             ], 'config');
         }
 
-        Str::macro('key', fn (string $prefix, int|null $length = null) => LaravelKeyGenerator::generate($prefix, $length));
+        Str::macro('key', function (string $prefix, int|null $length = null) {
+            return LaravelKeyGenerator::generate($prefix, $length);
+        });
     }
 
     /**

@@ -9,6 +9,8 @@ trait HasKey
 {
     public static function bootHasKey(): void
     {
-        static::creating(fn (Model $model) => $model->key = Str::key(substr(strtolower(class_basename($model)), 0, 3).'_'));
+        static::creating(function (Model $model) {
+            return $model->key = Str::key(substr(strtolower(class_basename($model)), 0, 3).'_');
+        });
     }
 }
